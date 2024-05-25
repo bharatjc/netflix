@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  background-image: url('./assets/loginimage.png');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 540px;
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 45px 65px;
+}
+form h1{
+color: white;
+font-weight: bold;
+}
+form input{
+  height: 45px;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  border: 1px solid white;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+form button{
+  height: 45px;
+  font-weight: bold;
+  color: gainsboro;
+  border-radius: 5px;
+  font-size: 16px;
+  border-style: none;
+}
+.signup{
+  background-color: red;
+}
+.code{
+  background-color: rgba(128, 128, 128, 0.5); 
+}
+form h4{
+  color: gainsboro;
+}
+.option{
+  text-align: center;
+}
+.inputRemember{
+  display: flex;
+  gap: 10px;
+}
+.remember{
+  height: 20px;
+  width: 20px;
+}
