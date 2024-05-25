@@ -1,0 +1,26 @@
+.card{
+  height: 144px;
+  width: 224px;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+}
+.card .content{
+  margin-top: 30px;
+padding: 0 5px;
+color: yellow;
+display: none;
+}
+
+.content h2{
+  font-weight: 700;
+}
+.content p{
+  font-size: 12px;
+}
+.card:hover{
+  scale: 1.4;
+}
+.card:hover .content{
+  display: block;
+}
