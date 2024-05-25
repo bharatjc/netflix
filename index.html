@@ -26,10 +26,10 @@
       </div>
       <div class="flex items-center justify-between">
         <div class="px-5 relative group flex items-center justify-end">
-          <input
+          <input id="navInput"
             class="mr-6 hidden group-hover:block absolute border-white border-[1px] bg-black border-none text-gray-300 text-center font-thin"
-            type="text" value="titles, genres, people">
-          <i class="fa-solid fa-magnifying-glass"></i>
+            type="text" value="Enter category or movie">
+          <i id="navSearch" class="fa-solid fa-magnifying-glass"></i>
         </div>
         <h2 class="mx-2 cursor-pointer">Login</h2>
         <h2 class="mx-2 cursor-pointer">Sign Up</h2>
@@ -63,11 +63,11 @@
 
     <div class=" w-full pl-24 md:px-[3.8vw] pb-20">
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Popular on Netflix</h2>
+      <h2 id="popular" class="text-3xl font-semibold text-white mb-10">Popular on Netflix</h2>
 
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
 
-        <div style="background-image: url('./assets/popular/squid game.webp');" class="card">
+        <div id="squid game" style="background-image: url('./assets/popular/squid game.webp');" class="card">
           <div class="content">
             <h2>Squid Game</h2>
             <p>IMDB : 8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -75,7 +75,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/popular/strangerthings.webp');" class="card">
+        <div id="stranger things" style="background-image: url('./assets/popular/strangerthings.webp');" class="card">
           <div class="content">
             <h2>Stranger things</h2>
             <p>IMDB : 8.7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -83,7 +83,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/popular/peakyblinders.webp');" class="card">
+        <div id="peaky blinders" style="background-image: url('./assets/popular/peakyblinders.webp');" class="card">
           <div class="content">
             <h2>Peaky Blinders</h2>
             <p>IMDB : 9/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -92,7 +92,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/popular/dark.webp');" class="card">
+        <div id="dark" style="background-image: url('./assets/popular/dark.webp');" class="card">
           <div class="content">
             <h2>Dark</h2>
             <p>IMDB : 8.7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/popular/narcos.webp');" class="card">
+        <div id="narcos" style="background-image: url('./assets/popular/narcos.webp');" class="card">
           <div class="content">
             <h2>Narcos</h2>
             <p>IMDB : 8.8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -110,11 +110,11 @@
       </div>
       <!-- ----end of popular section---- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Horror Movies</h2>
+      <h2 id="horror" class="text-3xl font-semibold text-white mb-10">Horror Movies</h2>
 
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
 
-        <div style="background-image: url('./assets/horror/conuring.jpg');" class="card">
+        <div id="conjuring" style="background-image: url('./assets/horror/conuring.jpg');" class="card">
           <div class="content">
             <h2>The Conjuring</h2>
             <p>IMDB : 7.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/horror/anabella.png');" class="card">
+        <div id="annabelle" style="background-image: url('./assets/horror/anabella.png');" class="card">
           <div class="content">
             <h2>Annabelle</h2>
             <p>IMDB : 5.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -130,7 +130,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/horror/nun.jpg');" class="card">
+        <div id="nun" style="background-image: url('./assets/horror/nun.jpg');" class="card">
           <div class="content">
             <h2>The Nun</h2>
             <p>IMDB : 5.3/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -139,7 +139,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/horror/evilnight.jpg');" class="card">
+        <div id="evil night" style="background-image: url('./assets/horror/evilnight.jpg');" class="card">
           <div class="content">
             <h2>Evil Night</h2>
             <p>IMDB : 4.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -147,7 +147,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/horror/hereditary.jpg');" class="card">
+        <div id="hereditary" style="background-image: url('./assets/horror/hereditary.jpg');" class="card">
           <div class="content">
             <h2>Hereditary</h2>
             <p>IMDB : 7.3/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -158,9 +158,9 @@
 
       <!-- ---------end of horror section------- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Only on Netflix</h2>
+      <h2 id="netflix special" class="text-3xl font-semibold text-white mb-10">Only on Netflix</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/onlynetflix/moneyheist.jpg');" class="card">
+        <div id="money heist" style="background-image: url('./assets/onlynetflix/moneyheist.jpg');" class="card">
           <div class="content">
             <h2>Money Heist</h2>
             <p>IMDB : 8.2/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -168,7 +168,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/onlynetflix/wednesday.jpg');" class="card">
+        <div id="wednesday" style="background-image: url('./assets/onlynetflix/wednesday.jpg');" class="card">
           <div class="content">
             <h2>Wednesday</h2>
             <p>IMDB : 8.1/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -176,7 +176,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/onlynetflix/sacred\ games.png');" class="card">
+        <div id="sacred games" style="background-image: url('./assets/onlynetflix/sacred\ games.png');" class="card">
           <div class="content">
             <h2>Sacred Games</h2>
             <p>IMDB : 8.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -185,7 +185,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/onlynetflix/lucifer.jpg');" class="card">
+        <div id="lucifer" style="background-image: url('./assets/onlynetflix/lucifer.jpg');" class="card">
           <div class="content">
             <h2>Lucifer</h2>
             <p>IMDB : 8.1/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -193,7 +193,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/onlynetflix/vikings.jpg');" class="card">
+        <div id="vikings" style="background-image: url('./assets/onlynetflix/vikings.jpg');" class="card">
           <div class="content">
             <h2>Vikings</h2>
             <p>IMDB : 8.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -203,9 +203,9 @@
       </div>
       <!-- ------end of only on netflix section------ -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Trending Now</h2>
+      <h2 id="trending" class="text-3xl font-semibold text-white mb-10">Trending Now</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/trending/duneii.jpg');" class="card">
+        <div id="dune" style="background-image: url('./assets/trending/duneii.jpg');" class="card">
           <div class="content">
             <h2>Dune: Part Two</h2>
             <p>IMDB : 8.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -213,7 +213,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/trending/madameweb.jpg');" class="card">
+        <div id="madame web" style="background-image: url('./assets/trending/madameweb.jpg');" class="card">
           <div class="content">
             <h2>Madame Web</h2>
             <p>IMDB : 6/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -221,7 +221,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/trending/aschamkila.jpg');" class="card">
+        <div id="amar singh chamkila" style="background-image: url('./assets/trending/aschamkila.jpg');" class="card">
           <div class="content">
             <h2>Amar Singh Chamkila</h2>
             <p>IMDB : 9/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -230,7 +230,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/trending/rednotice.jpg');" class="card">
+        <div id="red notice" style="background-image: url('./assets/trending/rednotice.jpg');" class="card">
           <div class="content">
             <h2>Red Notice</h2>
             <p>IMDB : 4.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -238,7 +238,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/trending/heeramandi.jpg');" class="card">
+        <div id="heeramandi" style="background-image: url('./assets/trending/heeramandi.jpg');" class="card">
           <div class="content">
             <h2>Heeramandi</h2>
             <p>IMDB : 7.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -248,9 +248,9 @@
       </div>
       <!-- -------end of trending section -------- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">TV Sci-Fi</h2>
+      <h2 id="scifi" class="text-3xl font-semibold text-white mb-10">TV Sci-Fi</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/scifi/dunkrik.jpg');" class="card">
+        <div id="dunkrik" style="background-image: url('./assets/scifi/dunkrik.jpg');" class="card">
           <div class="content">
             <h2>Dunkirk</h2>
             <p>IMDB : 7.8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -258,7 +258,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/scifi/mirage.jpg');" class="card">
+        <div id="mirage" style="background-image: url('./assets/scifi/mirage.jpg');" class="card">
           <div class="content">
             <h2>Mirage</h2>
             <p>IMDB : 7.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -266,7 +266,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/scifi/snowpiercer.jpg');" class="card">
+        <div id="snowpiercer" style="background-image: url('./assets/scifi/snowpiercer.jpg');" class="card">
           <div class="content">
             <h2>Snowpiercer</h2>
             <p>IMDB : 6.9/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -275,7 +275,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/scifi/spectral.jpg');" class="card">
+        <div id="spectral" style="background-image: url('./assets/scifi/spectral.jpg');" class="card">
           <div class="content">
             <h2>Spectral</h2>
             <p>IMDB : 6.3/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -283,7 +283,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/scifi/upgrade.jpg');" class="card">
+        <div id="upgrade" style="background-image: url('./assets/scifi/upgrade.jpg');" class="card">
           <div class="content">
             <h2>Upgrade</h2>
             <p>IMDB : 7.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -294,9 +294,9 @@
       </div>
       <!-- -------end of scifi section--------- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Animation</h2>
+      <h2 id="animation" class="text-3xl font-semibold text-white mb-10">Animation</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/animated/coco.jpg');" class="card">
+        <div id="coco" style="background-image: url('./assets/animated/coco.jpg');" class="card">
           <div class="content">
             <h2>Coco</h2>
             <p>IMDB : 8.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -304,7 +304,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/animated/encanto.jpg');" class="card">
+        <div id="encanto" style="background-image: url('./assets/animated/encanto.jpg');" class="card">
           <div class="content">
             <h2>Encanto</h2>
             <p>IMDB : 7.2/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -312,7 +312,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/animated/frozen.jpg');" class="card">
+        <div id="frozen" style="background-image: url('./assets/animated/frozen.jpg');" class="card">
           <div class="content">
             <h2>Frozen</h2>
             <p>IMDB : 7.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -321,7 +321,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/animated/lionking.jpg');" class="card">
+        <div id="lion king" style="background-image: url('./assets/animated/lionking.jpg');" class="card">
           <div class="content">
             <h2>The Lion King</h2>
             <p>IMDB : 6.8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -329,7 +329,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/animated/pinocchio.jpg');" class="card">
+        <div id="pinocchio" style="background-image: url('./assets/animated/pinocchio.jpg');" class="card">
           <div class="content">
             <h2>Pinocchio</h2>
             <p>IMDB : 7.6/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -339,9 +339,9 @@
       </div>
       <!-- ---------end of animated section---------- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Bollywood</h2>
+      <h2 id="bollywood" class="text-3xl font-semibold text-white mb-10">Bollywood</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/bollywood/animal.jpg');" class="card">
+        <div id="animal" style="background-image: url('./assets/bollywood/animal.jpg');" class="card">
           <div class="content">
             <h2>Animal</h2>
             <p>IMDB : 6.2/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -349,7 +349,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/bollywood/dunki.jpg');" class="card">
+        <div id="dunki" style="background-image: url('./assets/bollywood/dunki.jpg');" class="card">
           <div class="content">
             <h2>Dunki</h2>
             <p>IMDB : 6.6/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -357,7 +357,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/bollywood/pushpa.jpg');" class="card">
+        <div id="pushpa" style="background-image: url('./assets/bollywood/pushpa.jpg');" class="card">
           <div class="content">
             <h2>Pushpa: The Rise</h2>
             <p>IMDB : 7.6/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -366,7 +366,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/bollywood/kgf2.jpg');" class="card">
+        <div id="kgf" style="background-image: url('./assets/bollywood/kgf2.jpg');" class="card">
           <div class="content">
             <h2>K.G.F: Chapter 2</h2>
             <p>IMDB : 8.3/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -374,7 +374,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/bollywood/rrr.jpg');" class="card">
+        <div id="rrr" style="background-image: url('./assets/bollywood/rrr.jpg');" class="card">
           <div class="content">
             <h2>RRR</h2>
             <p>IMDB : 7.8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -384,9 +384,9 @@
       </div>
       <!-- -----end of bollywood---- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Drama</h2>
+      <h2 id="drama" class="text-3xl font-semibold text-white mb-10">Drama</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/drama/aiborderland.jpg');" class="card">
+        <div id="alice in borderland" style="background-image: url('./assets/drama/aiborderland.jpg');" class="card">
           <div class="content">
             <h2>Alice in Borderland</h2>
             <p>IMDB : 7.7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -394,7 +394,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/drama/allofusaredead.jpg');" class="card">
+        <div id="all of us are dead" style="background-image: url('./assets/drama/allofusaredead.jpg');" class="card">
           <div class="content">
             <h2>All of Us Are Dead</h2>
             <p>IMDB : 7.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -402,7 +402,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/drama/godless.jpg');" class="card">
+        <div id="godless" style="background-image: url('./assets/drama/godless.jpg');" class="card">
           <div class="content">
             <h2>Godless</h2>
             <p>IMDB : 8.2/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -411,7 +411,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/drama/queen\'sgambit.jpg');" class="card">
+        <div id="queens gambit" style="background-image: url('./assets/drama/queen\'sgambit.jpg');" class="card">
           <div class="content">
             <h2>The Queen's Gambit</h2>
             <p>IMDB : 8.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -419,7 +419,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/drama/silentsea.jpg');" class="card">
+        <div id="silent sea" style="background-image: url('./assets/drama/silentsea.jpg');" class="card">
           <div class="content">
             <h2>The Silent Sea</h2>
             <p>IMDB : 6.9/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -429,9 +429,9 @@
       </div>
       <!-- -------end of drama section------- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Nepali</h2>
+      <h2 id="nepali" class="text-3xl font-semibold text-white mb-10">Nepali</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/nepali/jari.jpg');" class="card">
+        <div id="jaari" style="background-image: url('./assets/nepali/jari.jpg');" class="card">
           <div class="content">
             <h2>Jaari</h2>
             <p>IMDB : 8.7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -439,7 +439,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/nepali/mahajatra.jpg');" class="card">
+        <div id="mahajatra" style="background-image: url('./assets/nepali/mahajatra.jpg');" class="card">
           <div class="content">
             <h2>Mahajatra</h2>
             <p>IMDB : 7.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -447,7 +447,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/nepali/farkifarki.jpg');" class="card">
+        <div id="farki farki" style="background-image: url('./assets/nepali/farkifarki.jpg');" class="card">
           <div class="content">
             <h2>Farki Farki</h2>
             <p>IMDB : 7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -456,7 +456,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/nepali/pujarsarki.jpg');" class="card">
+        <div id="pujar sarki" style="background-image: url('./assets/nepali/pujarsarki.jpg');" class="card">
           <div class="content">
             <h2>Pujar Sarki</h2>
             <p>IMDB : 7.5/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -464,7 +464,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/nepali/dimagkharab.jpg');" class="card">
+        <div id="dimag kharab" style="background-image: url('./assets/nepali/dimagkharab.jpg');" class="card">
           <div class="content">
             <h2>Dimag Kharab</h2>
             <p>IMDB : 8.1/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -474,9 +474,9 @@
       </div>
       <!-- -----end of nepali section----- -->
 
-      <h2 class="text-3xl font-semibold text-white mb-10">Mystery</h2>
+      <h2 id="mystery" class="text-3xl font-semibold text-white mb-10">Mystery</h2>
       <div class="w-full flex flex-wrap items-center gap-2 mb-16">
-        <div style="background-image: url('./assets/mystrey/andhadhun.jpg');" class="card">
+        <div id="andhadhun" style="background-image: url('./assets/mystrey/andhadhun.jpg');" class="card">
           <div class="content">
             <h2>Andhadhun</h2>
             <p>IMDB : 8.2/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -484,7 +484,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/mystrey/calibre.jpg');" class="card">
+        <div id="calibre" style="background-image: url('./assets/mystrey/calibre.jpg');" class="card">
           <div class="content">
             <h2>Calibre</h2>
             <p>IMDB : 6.8/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -492,7 +492,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/mystrey/jaanejaan.jpg');" class="card">
+        <div id="jaane jaan" style="background-image: url('./assets/mystrey/jaanejaan.jpg');" class="card">
           <div class="content">
             <h2>Jaane Jaan</h2>
             <p>IMDB : 7/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -501,7 +501,7 @@
         </div>
 
 
-        <div style="background-image: url('./assets/mystrey/murdermystrey.jpg');" class="card">
+        <div id="murder mystrey" style="background-image: url('./assets/mystrey/murdermystrey.jpg');" class="card">
           <div class="content">
             <h2>Murder Mystery</h2>
             <p>IMDB : 6/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -509,7 +509,7 @@
           </div>
         </div>
 
-        <div style="background-image: url('./assets/mystrey/johnwick.jpg');" class="card">
+        <div id="john wick" style="background-image: url('./assets/mystrey/johnwick.jpg');" class="card">
           <div class="content">
             <h2>John Wick</h2>
             <p>IMDB : 7.4/10 &#9734;&#9734;&#9734;&#9734;&#9734;</p>
@@ -560,6 +560,7 @@
           <p class="text-gray-500">Created by Bharat Chaudhary</p>
         </div>
       </footer>
+      <script src="script.js"></script>
   </body>
 
 </html>
