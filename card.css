@@ -4,6 +4,7 @@
   display: flex;
   background-size: cover;
   align-items: center;
+  transition: transform 0.5s;
 }
 .card .content{
   margin-top: 30px;
@@ -19,7 +20,7 @@ display: none;
   font-size: 12px;
 }
 .card:hover{
-  scale: 1.4;
+  transform: scale(1.4);
 }
 .card:hover .content{
   display: block;
